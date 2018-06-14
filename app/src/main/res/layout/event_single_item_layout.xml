@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_five"
+    android:layout_marginTop="@dimen/margin_five">
+
+    <RelativeLayout
+        android:id="@+id/rl_event_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_event_logo"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_event_logo"
+            android:background="#90000000">
+
+            <TextView
+                android:id="@+id/tv_event_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/margin_five"
+                android:layout_marginRight="@dimen/margin_five"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Header"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_header"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_event_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_event_header"
+                android:layout_marginBottom="@dimen/margin_five"
+                android:layout_marginLeft="@dimen/margin_five"
+                android:ellipsize="end"
+                android:text="Venue"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/tv_event_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_event_message"
+                android:ellipsize="end"
+                android:layout_marginBottom="@dimen/margin_five"
+                android:layout_marginLeft="@dimen/margin_five"
+                android:text="Date"
+                android:textColor="@color/colorWhite"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

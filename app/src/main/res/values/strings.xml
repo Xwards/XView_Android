@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">XView</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="alert_dialog_no_network_msg1">Currently, there is no Internet connectivity. Please try later when connectivity is restored.</string>
+    <string name="alert_dialog_location_message">Select Your Current Location</string>
+    <string name="alert_dialog_no_location_available">No Location Available</string>
+    <string name="tv_no_record_fount">No Record Found</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="evp_submit">SUBMIT</string>
+    <string name="evp_retry">RETRY</string>
+    <string name="cant_play_this_video">Unable to play this video now.</string>
+    <string name="alert_dialog_logout">Are you sure you want to logout from App?.</string>
+    <string name="alert_dialog_otp_message">Enter your Admin generated OTP to Authenticate the device.</string>
+    <string name="alert_dialog_invalid_otp_message">Invalid OTP</string>
+    <string name="dialog_message_otp_error">Please try with a valid OTP</string>
+    <string name="alert_dialog_invalid_kiosk_id">Invalid Kiosk Password</string>
+    <string name="device_type_cab">cab</string>
+    <string name="device_type_tv">tv-box</string>
+    <string name="alert_dialog_device_type">Select your Device Type:</string>
+    <string name="btn_message_contact_us">Contact Us</string>
+    <string name="alert_dilaog_contact_us_message">Please write your feedback to us</string>
+    <string name="send">Send</string>
+    <string name="alert_dialog_ivalid_email">Enter a valid Email</string>
+    <string name="alert_dialog_ivalid_phone">Please enter a valid Phone Number</string>
+    <string name="alert_dialog_ivalid_message">Please enter a valid message</string>
+    <string name="dialog_contact_us_email_hint">Name(Optional)</string>
+    <string name="dialog_contact_us_phone_hint">Phone Number</string>
+    <string name="dialog_contact_us_message">Message(Optional)</string>
+    <string name="alert_dialog_download_started">Please wait.Download is in Progress</string>
+    <string name="device_admin_warning">Kisok Mode</string>
+    <string name="device_admin_enabled">Admin Enabled</string>
+    <string name="device_admin_disabled">Admin Disabled</string>
+    <string name="kiosk_mode_enabled">Kisok Mode Enabled</string>
+    <string name="kiosk_mode_disabled">Kiosk Mode Disabled</string>
+    <string name="not_device_admin">You are not an Admin user of this device</string>
+    <string name="not_device_owner">You are not a device owner of this device</string>
+    <string name="alert_dialog_message_updating">Updating...</string>
+    <string name="alert_dialog_feedback_success">Your record added succesfully.We will reach you shortly. Thank you</string>
+    <string name="dialog_message_auth">Authenticating...</string>
+    <string name="device_admin_not_enabled">Device is not an admin user</string>
+    <string name="admin_receiver_status_enabled">Lock Admin receiver enabled</string>
+    <string name="admin_receiver_status_disabled">Lock Admin receiver disabled</string>
+    <array name="device_type_spinner_array">
+        <item>@string/device_type_cab</item>
+        <item>@string/device_type_tv</item>
+    </array>
+</resources>
+

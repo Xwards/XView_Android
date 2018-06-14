@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="invisible" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/iv_banner_ad"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/fl_event_container">
+
+            <!--<com.xwards.xview.utils.CustomViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:foregroundGravity="center" />-->
+
+            <RelativeLayout
+                android:id="@+id/rv_player_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:foregroundGravity="center"/>
+
+            <ImageView
+                android:id="@+id/iv_expand_collapse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="@dimen/ten_dp_margin"
+                android:scaleType="center"
+                android:padding="@dimen/ten_dp_margin"
+                android:background="@mipmap/expand" />
+
+            <ImageView
+                android:id="@+id/iv_exit_kiosk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/ten_dp_margin"
+                android:background="@mipmap/power_button" />
+
+            <Button
+                android:id="@+id/btn_contact_us"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/btn_message_contact_us"/>
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_banner_ad"
+            android:layout_width="match_parent"
+            android:layout_height="215dp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:layout_toLeftOf="@+id/fl_event_container"
+            android:visibility="visible"></ImageView>
+
+        <FrameLayout
+            android:id="@+id/fl_event_container"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:visibility="visible">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_event_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+        </FrameLayout>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_no_record_fount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/tv_no_record_fount"
+        android:visibility="gone" />
+</RelativeLayout>
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_three">3dp</dimen>
+    <dimen name="margin_five">5dp</dimen>
+    <dimen name="margin_ten">10dp</dimen>
+    <dimen name="margin_twelve">12dp</dimen>
+    <dimen name="margin_fifteen">15dp</dimen>
+    <dimen name="margin_twety">20dp</dimen>
+    <dimen name="margin_twety_five">25dp</dimen>
+    <dimen name="margin_thirty">30dp</dimen>
+    <dimen name="margin_thirty_five">35dp</dimen>
+    <dimen name="margin_fifty">50dp</dimen>
+    <dimen name="ten_dp_margin">10dp</dimen>
+
+
+
+    <dimen name="evp_content_inset">16dp</dimen>
+    <dimen name="evp_content_inset_half">8dp</dimen>
+    <dimen name="evp_content_inset_less">1dp</dimen>
+    <dimen name="evp_content_inset_iconbuttons">2dp</dimen>
+
+    <dimen name="evp_text_size_small">10sp</dimen>
+
+    <dimen name="evp_button_size">48dp</dimen>
+    <dimen name="evp_text_size_medium">14sp</dimen>
+
+    <dimen name="evp_negative_inset_large">-8dp</dimen>
+    <dimen name="evp_negative_inset_small">-2dp</dimen>
+    <dimen name="text_size_header">18sp</dimen>
+    <dimen name="text_size_normal">14sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="progress_width">250dp</dimen>
+    <dimen name="progress_margin">10dp</dimen>
+    <dimen name="spot_size">6dp</dimen>
+    <dimen name="popup_width">500dp</dimen>
+    <dimen name="popup_height">700dp</dimen>
+    <dimen name="popup_height_otp">350dp</dimen>
+
+
+</resources>

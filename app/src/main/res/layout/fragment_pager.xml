@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    android:id="@+id/fl_root"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.xwards.xview.home.PlayerFragment">
+
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/vv_local_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:use_controller="false"
+        android:visibility="visible"/>
+
+
+    <ImageView
+        android:id="@+id/iv_video_preview"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/iv_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:foregroundGravity="center"
+        android:src="@drawable/evp_action_play"/>
+
+</FrameLayout>
