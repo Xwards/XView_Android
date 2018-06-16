@@ -30,7 +30,7 @@ android {
      * STAGING pointed to the development Phase
      */
     productFlavors {
-        STAGING {
+        staging {
             minSdkVersion 19
             applicationId 'com.xwards.xview'
             targetSdkVersion 27
@@ -38,13 +38,13 @@ android {
             versionName '1.0'
             buildConfigField("String", "XViewAPI", "\"http://35.154.54.205/Lumen/public/api/v1.1/\"")
         }
-        PRODUCTION {
+        production {
             minSdkVersion 19
             applicationId 'com.xwards.xview'
             targetSdkVersion 27
             versionCode 6
             versionName '1.0'
-            buildConfigField("String", "XViewAPI", "\"http://52.66.117.132/Lumen/public/api/v1.0/\"")
+            buildConfigField("String", "XViewAPI", "\"http://35.154.54.205/Lumen/public/api/v1.1/\"")
         }
     }
 
