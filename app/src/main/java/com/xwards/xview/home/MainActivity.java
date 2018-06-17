@@ -720,7 +720,7 @@ public class MainActivity extends BaseActivity implements DialogInterfaces,
                 !model.getEventData().getEventList().isEmpty()) {
 
             EventDAO eventDAO = new EventDAO(this);
-            if (!mEventList.isEmpty()) {
+            if (mEventList.isEmpty()) {
                 mEventList.addAll(model.getEventData().getEventList());
                 setEventAdapter(mEventList);
                 for (EventModel object : mEventList) {
