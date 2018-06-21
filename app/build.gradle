@@ -1,19 +1,20 @@
 apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
 repositories {
     maven { url 'https://maven.fabric.io/public' }
 }
 
 android {
     compileSdkVersion 27
-    buildToolsVersion '27.0.0'
+    buildToolsVersion '27.0.3'
     dataBinding.enabled = true
     flavorDimensions "default"
     defaultConfig {
         applicationId 'com.xwards.xview'
         minSdkVersion 19
         targetSdkVersion 27
-        versionCode 6
-        versionName "1.0"
+        versionCode 7
+        versionName "2.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -25,16 +26,16 @@ android {
     }
     /**
      * The Application configured two variant for the Server
-     * STAGING and PRODUCTION
-     * The PRODUCTION pointed to the Live running Server
-     * STAGING pointed to the development Phase
+     * staging and production
+     * The production pointed to the Live running Server
+     * staging pointed to the development Phase
      */
     productFlavors {
         staging {
             minSdkVersion 19
             applicationId 'com.xwards.xview'
             targetSdkVersion 27
-            versionCode 6
+            versionCode 7
             versionName '1.0'
             buildConfigField("String", "XViewAPI", "\"http://35.154.54.205/Lumen/public/api/v1.1/\"")
         }
@@ -42,8 +43,9 @@ android {
             minSdkVersion 19
             applicationId 'com.xwards.xview'
             targetSdkVersion 27
-            versionCode 6
+            versionCode 7
             versionName '1.0'
+            //buildConfigField("String", "XViewAPI", "\"http://52.66.117.132/Lumen/public/api/v1.0/\"")
             buildConfigField("String", "XViewAPI", "\"http://35.154.54.205/Lumen/public/api/v1.1/\"")
         }
     }
@@ -57,9 +59,10 @@ android {
 
 dependencies {
     implementation 'com.google.firebase:firebase-core:12.0.1'
-    implementation 'com.google.firebase:firebase-crash:12.0.1'
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    //implementation 'com.google.firebase:firebase-crash:12.0.1'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.1'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
