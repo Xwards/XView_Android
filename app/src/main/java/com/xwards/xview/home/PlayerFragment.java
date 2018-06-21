@@ -19,6 +19,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
+import com.crashlytics.android.Crashlytics;
 import com.google.android.exoplayer2.ExoPlaybackException;
 import com.google.android.exoplayer2.ExoPlayer;
 import com.google.android.exoplayer2.ExoPlayerFactory;
@@ -285,8 +286,12 @@ public class PlayerFragment extends BaseFragment implements MediaPlayer.OnComple
         } catch (Exception e) {
             e.printStackTrace();
             Log.d(TAG, e.getMessage());
-            FirebaseCrash.logcat(Log.ERROR, TAG, "NPE caught");
-            FirebaseCrash.report(e);
+            //            TODO: Check usage of crashlytics here
+            Crashlytics.log(Log.ERROR,TAG,"NPE caught");
+            //FirebaseCrash.logcat(Log.ERROR, TAG, "NPE caught");
+
+            Crashlytics.log(e.toString());
+            //FirebaseCrash.report(e);
         }
         return null;
     }

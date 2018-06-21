@@ -42,6 +42,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.crashlytics.android.Crashlytics;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.xwards.xview.R;
 import com.xwards.xview.adapters.ClickListener;
@@ -301,8 +302,14 @@ public class MainActivity extends BaseActivity implements DialogInterfaces,
             }
         } catch (Exception e) {
             Log.d(TAG, e.getMessage());
-            FirebaseCrash.logcat(Log.ERROR, TAG, "NPE caught");
-            FirebaseCrash.report(e);
+
+           // TODO: Check usage of crashlytics here
+            Crashlytics.log(Log.ERROR,TAG,"NPE caught");
+            //FirebaseCrash.logcat(Log.ERROR, TAG, "NPE caught");
+
+            Crashlytics.log(e.toString());
+            //FirebaseCrash.report(e);
+
         }
     }
 
@@ -339,8 +346,12 @@ public class MainActivity extends BaseActivity implements DialogInterfaces,
         } catch (Exception e) {
             Log.d(TAG, e.getMessage());
             e.printStackTrace();
-            FirebaseCrash.logcat(Log.ERROR, TAG, "NPE caught");
-            FirebaseCrash.report(e);
+            //            TODO: Check usage of crashlytics here
+            Crashlytics.log(Log.ERROR,TAG,"NPE caught");
+            //FirebaseCrash.logcat(Log.ERROR, TAG, "NPE caught");
+
+            Crashlytics.log(e.toString());
+            //FirebaseCrash.report(e);
         }
     }
 
@@ -524,8 +535,12 @@ public class MainActivity extends BaseActivity implements DialogInterfaces,
         } catch (Exception e) {
             e.printStackTrace();
             Log.d(TAG, e.getMessage());
-            FirebaseCrash.logcat(Log.ERROR, TAG, "NPE caught");
-            FirebaseCrash.report(e);
+            //            TODO: Check usage of crashlytics here
+            Crashlytics.log(Log.ERROR,TAG,"NPE caught");
+            //FirebaseCrash.logcat(Log.ERROR, TAG, "NPE caught");
+
+            Crashlytics.log(e.toString());
+            //FirebaseCrash.report(e);
         }
     }
 
@@ -564,8 +579,12 @@ public class MainActivity extends BaseActivity implements DialogInterfaces,
         } catch (Exception e) {
             e.printStackTrace();
             Log.d(TAG, e.getMessage());
-            FirebaseCrash.logcat(Log.ERROR, TAG, "NPE caught");
-            FirebaseCrash.report(e);
+            //            TODO: Check usage of crashlytics here
+            Crashlytics.log(Log.ERROR,TAG,"NPE caught");
+            //FirebaseCrash.logcat(Log.ERROR, TAG, "NPE caught");
+
+            Crashlytics.log(e.toString());
+            //FirebaseCrash.report(e);
         }
     }
 
@@ -606,8 +625,12 @@ public class MainActivity extends BaseActivity implements DialogInterfaces,
         } catch (Exception e) {
             e.printStackTrace();
             Log.d(TAG, e.getMessage());
-            FirebaseCrash.logcat(Log.ERROR, TAG, "NPE caught");
-            FirebaseCrash.report(e);
+            //            TODO: Check usage of crashlytics here
+            Crashlytics.log(Log.ERROR,TAG,"NPE caught");
+            //FirebaseCrash.logcat(Log.ERROR, TAG, "NPE caught");
+
+            Crashlytics.log(e.toString());
+            //FirebaseCrash.report(e);
         }
     }
 
@@ -646,8 +669,12 @@ public class MainActivity extends BaseActivity implements DialogInterfaces,
         } catch (Exception e) {
             e.printStackTrace();
             Log.d(TAG, e.getMessage());
-            FirebaseCrash.logcat(Log.ERROR, TAG, "NPE caught");
-            FirebaseCrash.report(e);
+            //            TODO: Check usage of crashlytics here
+            Crashlytics.log(Log.ERROR,TAG,"NPE caught");
+            //FirebaseCrash.logcat(Log.ERROR, TAG, "NPE caught");
+
+            Crashlytics.log(e.toString());
+            //FirebaseCrash.report(e);
         }
     }
 
@@ -702,8 +729,12 @@ public class MainActivity extends BaseActivity implements DialogInterfaces,
         } catch (Exception e) {
             e.printStackTrace();
             Log.d(TAG, e.getMessage());
-            FirebaseCrash.logcat(Log.ERROR, TAG, "NPE caught");
-            FirebaseCrash.report(e);
+            //            TODO: Check usage of crashlytics here
+            Crashlytics.log(Log.ERROR,TAG,"NPE caught");
+            //FirebaseCrash.logcat(Log.ERROR, TAG, "NPE caught");
+
+            Crashlytics.log(e.toString());
+            //FirebaseCrash.report(e);
         }
     }
 
@@ -882,8 +913,12 @@ public class MainActivity extends BaseActivity implements DialogInterfaces,
         } catch (Exception e) {
             e.printStackTrace();
             Log.d(TAG, e.getMessage());
-            FirebaseCrash.logcat(Log.ERROR, TAG, "NPE caught");
-            FirebaseCrash.report(e);
+            //            TODO: Check usage of crashlytics here
+            Crashlytics.log(Log.ERROR,TAG,"NPE caught");
+            //FirebaseCrash.logcat(Log.ERROR, TAG, "NPE caught");
+
+            Crashlytics.log(e.toString());
+            //FirebaseCrash.report(e);
         }
     }
 
@@ -929,8 +964,12 @@ public class MainActivity extends BaseActivity implements DialogInterfaces,
         } catch (Exception e) {
             e.printStackTrace();
             Log.d(TAG, e.getMessage());
-            FirebaseCrash.logcat(Log.ERROR, TAG, "NPE caught");
-            FirebaseCrash.report(e);
+            //            TODO: Check usage of crashlytics here
+            Crashlytics.log(Log.ERROR,TAG,"NPE caught");
+            //FirebaseCrash.logcat(Log.ERROR, TAG, "NPE caught");
+
+            Crashlytics.log(e.toString());
+            //FirebaseCrash.report(e);
         }
     }
 
@@ -971,8 +1010,12 @@ public class MainActivity extends BaseActivity implements DialogInterfaces,
         } catch (Exception e) {
             e.printStackTrace();
             Log.d(TAG, e.getMessage());
-            FirebaseCrash.logcat(Log.ERROR, TAG, "NPE caught");
-            FirebaseCrash.report(e);
+            //            TODO: Check usage of crashlytics here
+            Crashlytics.log(Log.ERROR,TAG,"NPE caught");
+            //FirebaseCrash.logcat(Log.ERROR, TAG, "NPE caught");
+
+            Crashlytics.log(e.toString());
+            //FirebaseCrash.report(e);
         }
     }
 
