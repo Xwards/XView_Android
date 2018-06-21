@@ -43,7 +43,6 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.google.firebase.analytics.FirebaseAnalytics;
-import com.google.firebase.crash.FirebaseCrash;
 import com.xwards.xview.R;
 import com.xwards.xview.adapters.ClickListener;
 import com.xwards.xview.adapters.EventAdapter;

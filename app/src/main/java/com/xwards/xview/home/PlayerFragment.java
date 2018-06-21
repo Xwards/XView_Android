@@ -41,7 +41,6 @@ import com.google.android.exoplayer2.upstream.DataSource;
 import com.google.android.exoplayer2.upstream.DefaultBandwidthMeter;
 import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
 import com.google.android.exoplayer2.util.Util;
-import com.google.firebase.crash.FirebaseCrash;
 import com.xwards.xview.R;
 import com.xwards.xview.base.BaseFragment;
 import com.xwards.xview.respmodel.AdVideoModel;
